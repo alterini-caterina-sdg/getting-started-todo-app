@@ -1,11 +1,12 @@
 const GREETINGS = [
-  "Whalecome!",
-  "All hands on deck!",
-  "Charting the course ahead!",
+    "Hello World!",
+    "Welcome back!",
+    "Great to see you again!"
 ];
 
-module.exports = async (req, res) => {
-  res.send({
-    greeting: GREETINGS[Math.floor(Math.random() * GREETINGS.length)],
-  });
+module.exports = (req, res) => {
+    const randomIndex = Math.floor(Math.random() * GREETINGS.length);
+    res.send({
+        greeting: GREETINGS[randomIndex]
+    });
 };
