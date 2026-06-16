@@ -1,5 +1,5 @@
 const GREETINGS = [
-    "Hello World!",
+    "Hello World!!",
     "Welcome back!",
     "Great to see you again!"
 ];
